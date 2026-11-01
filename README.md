@@ -150,3 +150,5 @@ Before exposing this app to hotel staff or customers:
 4. Define retention and access controls for uploaded booking data.
 5. Monitor data drift, cancellation outcomes, pricing error, and model failures; establish reviewed retraining and rollback.
 6. Require human approval for deposits, discounts, booking acceptance, and inventory decisions. Do not trigger overbooking automatically.
+#   N T I _ h o t e l  
+ 
