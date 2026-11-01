@@ -1,0 +1,668 @@
+{
+  "dataset": {
+    "files": [
+      "Hotel Reservations.csv",
+      "hotel_bookings.csv",
+      "hotel_bookings1.csv"
+    ],
+    "sources": {
+      "hotel_reservations": {
+        "file": "Hotel Reservations.csv",
+        "sha256": "d25e1d4680b2b91bcf5fd0a6b690f26c3bdfd52eb4e434e69018cb7bd60f6782",
+        "source_rows": 36275,
+        "usable_rows": 36275,
+        "exact_duplicate_rows_retained": 0,
+        "rows_excluded_invalid_guest_count": 0,
+        "rows_excluded_negative_adr": 0,
+        "rows_excluded_non_finite_or_missing_numeric": 0,
+        "cancellation_rate": 0.3276,
+        "year_summary": [
+          {
+            "arrival_year": 2017,
+            "bookings": 6514,
+            "cancellations": 961
+          },
+          {
+            "arrival_year": 2018,
+            "bookings": 29761,
+            "cancellations": 10924
+          }
+        ]
+      },
+      "hotel_bookings_sample": {
+        "file": "hotel_bookings.csv",
+        "sha256": "f523854bb187d37216035cedad8ea0e196b2045cc59de15fde03cbf1bd8b71b3",
+        "source_rows": 5000,
+        "usable_rows": 4998,
+        "exact_duplicate_rows_retained": 0,
+        "rows_excluded_invalid_guest_count": 1,
+        "rows_excluded_negative_adr": 1,
+        "rows_excluded_non_finite_or_missing_numeric": 0,
+        "cancellation_rate": 0.3409,
+        "year_summary": [
+          {
+            "arrival_year": 2015,
+            "bookings": 1030,
+            "cancellations": 349
+          },
+          {
+            "arrival_year": 2016,
+            "bookings": 2298,
+            "cancellations": 796
+          },
+          {
+            "arrival_year": 2017,
+            "bookings": 1670,
+            "cancellations": 559
+          }
+        ]
+      },
+      "hotel_bookings_full": {
+        "file": "hotel_bookings1.csv",
+        "sha256": "7c2ae42a7353905ea136e5c2287f17c92c5435826598bfbb8491c6f0c7b1fc06",
+        "source_rows": 119390,
+        "usable_rows": 119209,
+        "exact_duplicate_rows_retained": 31994,
+        "rows_excluded_invalid_guest_count": 180,
+        "rows_excluded_negative_adr": 1,
+        "rows_excluded_non_finite_or_missing_numeric": 0,
+        "cancellation_rate": 0.3708,
+        "year_summary": [
+          {
+            "arrival_year": 2015,
+            "bookings": 21967,
+            "cancellations": 8141
+          },
+          {
+            "arrival_year": 2016,
+            "bookings": 56623,
+            "cancellations": 20324
+          },
+          {
+            "arrival_year": 2017,
+            "bookings": 40619,
+            "cancellations": 15734
+          }
+        ]
+      }
+    },
+    "source_rows": 160665,
+    "usable_rows": 160482,
+    "columns": 42,
+    "exact_duplicate_rows_retained": 31994,
+    "year_summary": [
+      {
+        "arrival_year": 2015,
+        "bookings": 22997,
+        "cancellation_rate": 0.3692
+      },
+      {
+        "arrival_year": 2016,
+        "bookings": 58921,
+        "cancellation_rate": 0.3584
+      },
+      {
+        "arrival_year": 2017,
+        "bookings": 48803,
+        "cancellation_rate": 0.3535
+      },
+      {
+        "arrival_year": 2018,
+        "bookings": 29761,
+        "cancellation_rate": 0.3671
+      }
+    ],
+    "cancellation_rate": 0.3601,
+    "average_adr": 101.56
+  },
+  "classification": [
+    {
+      "Model": "Deep Extra Trees Classifier",
+      "Validation_Accuracy": 0.8686,
+      "Validation_Precision": 0.5461,
+      "Validation_Recall": 0.6472,
+      "Validation_F1_Score": 0.5924,
+      "Classification_Threshold": 0.4482,
+      "Validation_ROC_AUC": 0.8595,
+      "Validation_Average_Precision": 0.4815,
+      "Accuracy": 0.8612,
+      "Precision": 0.8425,
+      "Recall": 0.7646,
+      "F1_Score": 0.8017,
+      "ROC_AUC": 0.9043,
+      "Average_Precision": 0.8614,
+      "Confusion_Matrix": [
+        [
+          17276,
+          1561
+        ],
+        [
+          2571,
+          8353
+        ]
+      ]
+    },
+    {
+      "Model": "Deep Balanced Random Forest Classifier",
+      "Validation_Accuracy": 0.8503,
+      "Validation_Precision": 0.4951,
+      "Validation_Recall": 0.7315,
+      "Validation_F1_Score": 0.5905,
+      "Classification_Threshold": 0.4179,
+      "Validation_ROC_AUC": 0.865,
+      "Validation_Average_Precision": 0.428,
+      "Accuracy": 0.8475,
+      "Precision": 0.7861,
+      "Recall": 0.8032,
+      "F1_Score": 0.7945,
+      "ROC_AUC": 0.8917,
+      "Average_Precision": 0.8425,
+      "Confusion_Matrix": [
+        [
+          16449,
+          2388
+        ],
+        [
+          2150,
+          8774
+        ]
+      ]
+    },
+    {
+      "Model": "Deep Random Forest Classifier",
+      "Validation_Accuracy": 0.8485,
+      "Validation_Precision": 0.491,
+      "Validation_Recall": 0.7367,
+      "Validation_F1_Score": 0.5893,
+      "Classification_Threshold": 0.3852,
+      "Validation_ROC_AUC": 0.8665,
+      "Validation_Average_Precision": 0.4194,
+      "Accuracy": 0.8488,
+      "Precision": 0.7931,
+      "Recall": 0.7958,
+      "F1_Score": 0.7944,
+      "ROC_AUC": 0.8892,
+      "Average_Precision": 0.8351,
+      "Confusion_Matrix": [
+        [
+          16569,
+          2268
+        ],
+        [
+          2231,
+          8693
+        ]
+      ]
+    },
+    {
+      "Model": "Balanced Random Forest Classifier",
+      "Validation_Accuracy": 0.8446,
+      "Validation_Precision": 0.4784,
+      "Validation_Recall": 0.5879,
+      "Validation_F1_Score": 0.5275,
+      "Classification_Threshold": 0.4986,
+      "Validation_ROC_AUC": 0.8369,
+      "Validation_Average_Precision": 0.4125,
+      "Accuracy": 0.8113,
+      "Precision": 0.7398,
+      "Recall": 0.7494,
+      "F1_Score": 0.7446,
+      "ROC_AUC": 0.8576,
+      "Average_Precision": 0.7983,
+      "Confusion_Matrix": [
+        [
+          15958,
+          2879
+        ],
+        [
+          2738,
+          8186
+        ]
+      ]
+    },
+    {
+      "Model": "Random Forest Classifier",
+      "Validation_Accuracy": 0.8298,
+      "Validation_Precision": 0.4453,
+      "Validation_Recall": 0.6275,
+      "Validation_F1_Score": 0.521,
+      "Classification_Threshold": 0.3734,
+      "Validation_ROC_AUC": 0.8419,
+      "Validation_Average_Precision": 0.4063,
+      "Accuracy": 0.8169,
+      "Precision": 0.7709,
+      "Recall": 0.7133,
+      "F1_Score": 0.741,
+      "ROC_AUC": 0.8662,
+      "Average_Precision": 0.8073,
+      "Confusion_Matrix": [
+        [
+          16521,
+          2316
+        ],
+        [
+          3132,
+          7792
+        ]
+      ]
+    },
+    {
+      "Model": "Hist Gradient Boosting Classifier",
+      "Validation_Accuracy": 0.8477,
+      "Validation_Precision": 0.4855,
+      "Validation_Recall": 0.5401,
+      "Validation_F1_Score": 0.5113,
+      "Classification_Threshold": 0.4216,
+      "Validation_ROC_AUC": 0.8042,
+      "Validation_Average_Precision": 0.36,
+      "Accuracy": 0.8025,
+      "Precision": 0.7684,
+      "Recall": 0.6614,
+      "F1_Score": 0.7109,
+      "ROC_AUC": 0.8509,
+      "Average_Precision": 0.7825,
+      "Confusion_Matrix": [
+        [
+          16659,
+          2178
+        ],
+        [
+          3699,
+          7225
+        ]
+      ]
+    },
+    {
+      "Model": "Extra Trees Classifier",
+      "Validation_Accuracy": 0.8327,
+      "Validation_Precision": 0.4473,
+      "Validation_Recall": 0.5702,
+      "Validation_F1_Score": 0.5014,
+      "Classification_Threshold": 0.3767,
+      "Validation_ROC_AUC": 0.7962,
+      "Validation_Average_Precision": 0.3906,
+      "Accuracy": 0.7886,
+      "Precision": 0.7135,
+      "Recall": 0.7087,
+      "F1_Score": 0.7111,
+      "ROC_AUC": 0.8462,
+      "Average_Precision": 0.7768,
+      "Confusion_Matrix": [
+        [
+          15728,
+          3109
+        ],
+        [
+          3182,
+          7742
+        ]
+      ]
+    },
+    {
+      "Model": "Balanced Extra Trees Classifier",
+      "Validation_Accuracy": 0.8324,
+      "Validation_Precision": 0.4454,
+      "Validation_Recall": 0.5557,
+      "Validation_F1_Score": 0.4944,
+      "Classification_Threshold": 0.4937,
+      "Validation_ROC_AUC": 0.7968,
+      "Validation_Average_Precision": 0.3895,
+      "Accuracy": 0.7169,
+      "Precision": 0.5819,
+      "Recall": 0.8125,
+      "F1_Score": 0.6781,
+      "ROC_AUC": 0.835,
+      "Average_Precision": 0.7684,
+      "Confusion_Matrix": [
+        [
+          12459,
+          6378
+        ],
+        [
+          2048,
+          8876
+        ]
+      ]
+    },
+    {
+      "Model": "Regularized Hist Gradient Boosting Classifier",
+      "Validation_Accuracy": 0.8232,
+      "Validation_Precision": 0.4268,
+      "Validation_Recall": 0.5796,
+      "Validation_F1_Score": 0.4916,
+      "Classification_Threshold": 0.365,
+      "Validation_ROC_AUC": 0.7908,
+      "Validation_Average_Precision": 0.3408,
+      "Accuracy": 0.7902,
+      "Precision": 0.7203,
+      "Recall": 0.7005,
+      "F1_Score": 0.7102,
+      "ROC_AUC": 0.841,
+      "Average_Precision": 0.7689,
+      "Confusion_Matrix": [
+        [
+          15865,
+          2972
+        ],
+        [
+          3272,
+          7652
+        ]
+      ]
+    },
+    {
+      "Model": "Logistic Regression (Baseline)",
+      "Validation_Accuracy": 0.7258,
+      "Validation_Precision": 0.2993,
+      "Validation_Recall": 0.64,
+      "Validation_F1_Score": 0.4078,
+      "Classification_Threshold": 0.3147,
+      "Validation_ROC_AUC": 0.7363,
+      "Validation_Average_Precision": 0.2976,
+      "Accuracy": 0.7342,
+      "Precision": 0.6159,
+      "Recall": 0.7329,
+      "F1_Score": 0.6693,
+      "ROC_AUC": 0.8112,
+      "Average_Precision": 0.6916,
+      "Confusion_Matrix": [
+        [
+          13844,
+          4993
+        ],
+        [
+          2918,
+          8006
+        ]
+      ]
+    }
+  ],
+  "classification_uncertainty_95_ci": {
+    "Accuracy": [
+      0.8575,
+      0.8648
+    ],
+    "Precision": [
+      0.8364,
+      0.8488
+    ],
+    "Recall": [
+      0.7569,
+      0.7726
+    ],
+    "F1_Score": [
+      0.796,
+      0.8072
+    ],
+    "ROC_AUC": [
+      0.9006,
+      0.9082
+    ],
+    "Average_Precision": [
+      0.8551,
+      0.8679
+    ],
+    "Brier_Score": [
+      0.1171,
+      0.1206
+    ]
+  },
+  "classification_slices": {
+    "arrival_month": {
+      "1.0": {
+        "bookings": 1014,
+        "actual_cancellations": 24,
+        "predicted_cancellations": 208,
+        "accuracy": 0.8146,
+        "precision": 0.1058,
+        "recall": 0.9167,
+        "f1": 0.1897
+      },
+      "2.0": {
+        "bookings": 1704,
+        "actual_cancellations": 430,
+        "predicted_cancellations": 371,
+        "accuracy": 0.8809,
+        "precision": 0.8059,
+        "recall": 0.6953,
+        "f1": 0.7466
+      },
+      "3.0": {
+        "bookings": 2358,
+        "actual_cancellations": 700,
+        "predicted_cancellations": 698,
+        "accuracy": 0.8965,
+        "precision": 0.8266,
+        "recall": 0.8243,
+        "f1": 0.8255
+      },
+      "4.0": {
+        "bookings": 2736,
+        "actual_cancellations": 995,
+        "predicted_cancellations": 1037,
+        "accuracy": 0.9013,
+        "precision": 0.8496,
+        "recall": 0.8854,
+        "f1": 0.8671
+      },
+      "5.0": {
+        "bookings": 2598,
+        "actual_cancellations": 948,
+        "predicted_cancellations": 898,
+        "accuracy": 0.9045,
+        "precision": 0.8898,
+        "recall": 0.8428,
+        "f1": 0.8657
+      },
+      "6.0": {
+        "bookings": 3203,
+        "actual_cancellations": 1291,
+        "predicted_cancellations": 1198,
+        "accuracy": 0.8698,
+        "precision": 0.8648,
+        "recall": 0.8025,
+        "f1": 0.8325
+      },
+      "7.0": {
+        "bookings": 2557,
+        "actual_cancellations": 1071,
+        "predicted_cancellations": 837,
+        "accuracy": 0.8412,
+        "precision": 0.8973,
+        "recall": 0.7012,
+        "f1": 0.7872
+      },
+      "8.0": {
+        "bookings": 2799,
+        "actual_cancellations": 1303,
+        "predicted_cancellations": 1005,
+        "accuracy": 0.8235,
+        "precision": 0.9025,
+        "recall": 0.6961,
+        "f1": 0.786
+      },
+      "9.0": {
+        "bookings": 2962,
+        "actual_cancellations": 1356,
+        "predicted_cancellations": 971,
+        "accuracy": 0.8248,
+        "precision": 0.931,
+        "recall": 0.6667,
+        "f1": 0.777
+      },
+      "10.0": {
+        "bookings": 3404,
+        "actual_cancellations": 1578,
+        "predicted_cancellations": 1237,
+        "accuracy": 0.8493,
+        "precision": 0.9305,
+        "recall": 0.7294,
+        "f1": 0.8178
+      },
+      "11.0": {
+        "bookings": 2333,
+        "actual_cancellations": 848,
+        "predicted_cancellations": 733,
+        "accuracy": 0.9001,
+        "precision": 0.9195,
+        "recall": 0.7948,
+        "f1": 0.8526
+      },
+      "12.0": {
+        "bookings": 2093,
+        "actual_cancellations": 380,
+        "predicted_cancellations": 721,
+        "accuracy": 0.8103,
+        "precision": 0.4882,
+        "recall": 0.9263,
+        "f1": 0.6394
+      }
+    },
+    "market_segment_type": {
+      "Aviation": {
+        "bookings": 125,
+        "actual_cancellations": 37,
+        "predicted_cancellations": 17,
+        "accuracy": 0.792,
+        "precision": 0.8235,
+        "recall": 0.3784,
+        "f1": 0.5185
+      },
+      "Complementary": {
+        "bookings": 252,
+        "actual_cancellations": 0,
+        "predicted_cancellations": 11,
+        "accuracy": 0.9563,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "Corporate": {
+        "bookings": 1519,
+        "actual_cancellations": 177,
+        "predicted_cancellations": 142,
+        "accuracy": 0.9546,
+        "precision": 0.8803,
+        "recall": 0.7062,
+        "f1": 0.7837
+      },
+      "Offline": {
+        "bookings": 7602,
+        "actual_cancellations": 2738,
+        "predicted_cancellations": 2315,
+        "accuracy": 0.8554,
+        "precision": 0.854,
+        "recall": 0.7221,
+        "f1": 0.7825
+      },
+      "Online": {
+        "bookings": 20263,
+        "actual_cancellations": 7972,
+        "predicted_cancellations": 7429,
+        "accuracy": 0.8555,
+        "precision": 0.8395,
+        "recall": 0.7824,
+        "f1": 0.8099
+      }
+    }
+  },
+  "classification_baseline": {
+    "strategy": "majority_class",
+    "accuracy": 0.6329,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+  },
+  "regression": [
+    {
+      "Model": "Random Forest Regressor (Tuned)",
+      "Validation_R2_Score": 0.5675,
+      "RMSE ($)": 19.65,
+      "MAE ($)": 13.62,
+      "R2_Score": 0.7035
+    },
+    {
+      "Model": "Deep Extra Trees Regressor",
+      "Validation_R2_Score": 0.5402,
+      "RMSE ($)": 18.26,
+      "MAE ($)": 12.31,
+      "R2_Score": 0.744
+    },
+    {
+      "Model": "Extra Trees Regressor",
+      "Validation_R2_Score": 0.511,
+      "RMSE ($)": 20.36,
+      "MAE ($)": 14.26,
+      "R2_Score": 0.6816
+    },
+    {
+      "Model": "Random Forest Regressor",
+      "Validation_R2_Score": 0.4891,
+      "RMSE ($)": 22.35,
+      "MAE ($)": 15.98,
+      "R2_Score": 0.6164
+    },
+    {
+      "Model": "Regularized Hist Gradient Boosting Regressor",
+      "Validation_R2_Score": 0.2748,
+      "RMSE ($)": 22.39,
+      "MAE ($)": 16.42,
+      "R2_Score": 0.6153
+    },
+    {
+      "Model": "Ridge Regression (Baseline)",
+      "Validation_R2_Score": 0.2333,
+      "RMSE ($)": 25.18,
+      "MAE ($)": 18.57,
+      "R2_Score": 0.5134
+    },
+    {
+      "Model": "Hist Gradient Boosting Regressor",
+      "Validation_R2_Score": 0.2156,
+      "RMSE ($)": 22.22,
+      "MAE ($)": 16.12,
+      "R2_Score": 0.6208
+    }
+  ],
+  "regression_uncertainty_95_ci": {
+    "MAE ($)": [
+      13.42,
+      13.83
+    ],
+    "R2_Score": [
+      0.6908,
+      0.716
+    ]
+  },
+  "operational": {
+    "inference_rows": 1000,
+    "inference_seconds": 0.1704,
+    "inference_rows_per_second": 5869.6,
+    "classifier_artifact_bytes": 1938882539,
+    "regressor_artifact_bytes": 812875427
+  },
+  "best_cls_model": "Deep Extra Trees Classifier",
+  "classification_threshold": 0.4482333333333334,
+  "best_reg_model": "Random Forest Regressor (Tuned)",
+  "evaluation": {
+    "method": "historical_years_train_then_2017_validation_then_2018_diagnostic_split",
+    "training_years": [
+      2015,
+      2016
+    ],
+    "validation_year": 2017,
+    "validation_source": "hotel_reservations",
+    "validation_year_rows": 48803,
+    "target_source_validation_rows": 6514,
+    "holdout_year": 2018,
+    "classification_selection_metric": "validation_f1",
+    "classification_threshold_source": "validation_year",
+    "selection_training_rows": 81918,
+    "validation_rows": 6514,
+    "training_rows": 130721,
+    "holdout_rows": 29761,
+    "production_model_fit": "all_usable_rows_after_holdout_evaluation",
+    "warning": "The 2018 Hotel Reservations diagnostic split was inspected during prior model-development iterations, so it is not an independent final test. The source datasets also differ in feature coverage and population; scores do not establish performance for other hotels or future periods.",
+    "scikit_learn_version": "1.9.0"
+  }
+}

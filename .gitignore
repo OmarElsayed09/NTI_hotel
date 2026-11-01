@@ -1,0 +1,36 @@
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python caches and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing and type checking caches
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Logs
+*.log
+
+# Large trained ML models (exceeds GitHub 100MB limit; train via train_pipeline.py)
+*.joblib
+*.pkl
+models/*.joblib
+models/*.pkl
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
