@@ -1,0 +1,185 @@
+{
+  "by_year": [
+    {
+      "arrival_year": 2015,
+      "total": 22997,
+      "canceled": 8490,
+      "avg_adr": 90.22908683741358,
+      "cancel_rate": 36.92
+    },
+    {
+      "arrival_year": 2016,
+      "total": 58921,
+      "canceled": 21120,
+      "avg_adr": 100.30737529912935,
+      "cancel_rate": 35.84
+    },
+    {
+      "arrival_year": 2017,
+      "total": 48803,
+      "canceled": 17254,
+      "avg_adr": 112.58732803311273,
+      "cancel_rate": 35.35
+    },
+    {
+      "arrival_year": 2018,
+      "total": 29761,
+      "canceled": 10924,
+      "avg_adr": 106.35553744833842,
+      "cancel_rate": 36.71
+    }
+  ],
+  "by_segment": [
+    {
+      "market_segment_type": "Aviation",
+      "total": 360,
+      "canceled": 89,
+      "avg_adr": 100.89355555555555,
+      "cancel_rate": 24.72
+    },
+    {
+      "market_segment_type": "Complementary",
+      "total": 1119,
+      "canceled": 89,
+      "avg_adr": 3.0142984807864166,
+      "cancel_rate": 7.95
+    },
+    {
+      "market_segment_type": "Corporate",
+      "total": 7544,
+      "canceled": 1285,
+      "avg_adr": 75.70457979851537,
+      "cancel_rate": 17.03
+    },
+    {
+      "market_segment_type": "Direct",
+      "total": 13161,
+      "canceled": 2118,
+      "avg_adr": 117.11821746067929,
+      "cancel_rate": 16.09
+    },
+    {
+      "market_segment_type": "Groups",
+      "total": 20574,
+      "canceled": 12344,
+      "avg_adr": 82.13062603285701,
+      "cancel_rate": 60.0
+    },
+    {
+      "market_segment_type": "Offline",
+      "total": 35756,
+      "canceled": 11766,
+      "avg_adr": 90.46512641235037,
+      "cancel_rate": 32.91
+    },
+    {
+      "market_segment_type": "Online",
+      "total": 81966,
+      "canceled": 30095,
+      "avg_adr": 116.73616182319499,
+      "cancel_rate": 36.72
+    },
+    {
+      "market_segment_type": "Unknown",
+      "total": 2,
+      "canceled": 2,
+      "avg_adr": 15.0,
+      "cancel_rate": 100.0
+    }
+  ],
+  "by_room": [
+    {
+      "room_type_reserved": "Other",
+      "total": 607,
+      "canceled": 247,
+      "avg_adr": 187.59487644151565,
+      "cancel_rate": 40.69
+    },
+    {
+      "room_type_reserved": "Room_Type 1",
+      "total": 117381,
+      "canceled": 43781,
+      "avg_adr": 93.20940015845835,
+      "cancel_rate": 37.3
+    },
+    {
+      "room_type_reserved": "Room_Type 2",
+      "total": 1807,
+      "canceled": 595,
+      "avg_adr": 89.51738240177089,
+      "cancel_rate": 32.93
+    },
+    {
+      "room_type_reserved": "Room_Type 3",
+      "total": 938,
+      "canceled": 310,
+      "avg_adr": 159.7417910447761,
+      "cancel_rate": 33.05
+    },
+    {
+      "room_type_reserved": "Room_Type 4",
+      "total": 26070,
+      "canceled": 8466,
+      "avg_adr": 123.20649597238206,
+      "cancel_rate": 32.47
+    },
+    {
+      "room_type_reserved": "Room_Type 5",
+      "total": 7146,
+      "canceled": 2122,
+      "avg_adr": 127.90367478309544,
+      "cancel_rate": 29.69
+    },
+    {
+      "room_type_reserved": "Room_Type 6",
+      "total": 4098,
+      "canceled": 1383,
+      "avg_adr": 173.77573206442165,
+      "cancel_rate": 33.75
+    },
+    {
+      "room_type_reserved": "Room_Type 7",
+      "total": 2435,
+      "canceled": 884,
+      "avg_adr": 180.88350308008214,
+      "cancel_rate": 36.3
+    }
+  ],
+  "by_lead": [
+    {
+      "lead_bucket": "0-7 days",
+      "total": 25876,
+      "canceled": 2455,
+      "cancel_rate": 9.49
+    },
+    {
+      "lead_bucket": "8-30 days",
+      "total": 26639,
+      "canceled": 6705,
+      "cancel_rate": 25.17
+    },
+    {
+      "lead_bucket": "31-90 days",
+      "total": 42095,
+      "canceled": 14343,
+      "cancel_rate": 34.07
+    },
+    {
+      "lead_bucket": "91-180 days",
+      "total": 35300,
+      "canceled": 15831,
+      "cancel_rate": 44.85
+    },
+    {
+      "lead_bucket": ">180 days",
+      "total": 30572,
+      "canceled": 18454,
+      "cancel_rate": 60.36
+    }
+  ],
+  "kpis": {
+    "total_bookings": 160482,
+    "overall_cancel_rate": 36.01,
+    "average_adr": 101.56
+  }
+}
