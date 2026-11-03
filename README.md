@@ -28,11 +28,6 @@ An interactive Streamlit application and machine learning pipeline that estimate
 │   └── merged_hotel_reservations.csv
 ├── models/
 │   └── metrics_summary.json
-├── presentation_build/
-│   ├── presentation.html
-│   └── slides/
-├── scripts/
-│   └── generate_presentation.py
 ├── src/
 │   ├── prediction.py
 │   ├── datasets.py
